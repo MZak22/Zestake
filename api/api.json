@@ -1,12 +1,16 @@
 {
-  "users": [
-    {
-    "username": "mateusz",
-    "password": "tajnehaslo"
-    },
-    {
-    "username": "anna",
-    "password": "haslo123"
-    }
-  ]
+    "users": [
+        {
+            "username": "mateusz",
+            "password": "tajnehaslo"
+        },
+        {
+            "username": "anna",
+            "password": "haslo123"
+        },
+        {
+            "username": "tomasz",
+            "password": "niemasz"
+        }
+    ]
 }

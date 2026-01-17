@@ -1,27 +1,33 @@
-import { useState } from "react"
-import Register from "./register"
-import Login from "./Login"
+// import { useState } from "react"
+// import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+// import Register from "./Register"
+// import Login from "./Login" 
+// import Dashboard from "./Dashboard"
+// import Topmenu from "./Topmenu";
+// import Home from "./Home";
 
 
-export default function Auth() {
-  const [showLogin, setShowLogin] = useState(true)
-  const [status, setStatus] = useState<null | boolean>(null)
+// export default function Auth() {
+//   const [status, setStatus] = useState<null | boolean>(null)
+//   const [view, setView] = useState<'home' | 'login' | 'register' | 'dashboard'>('home')
 
-  return (
-    <div className="container">
-      <h2>{showLogin ? "Login" : "Register"} Page</h2>
+//   function handleLoginStatus(success: boolean) {
+//     setStatus(success)
 
-      <button onClick={() => { setShowLogin(true); setStatus(null) }}>Login</button>
-      <button onClick={() => { setShowLogin(false); setStatus(null) }}>Register</button>
+//     if (success) {
+//       setView("dashboard")
+//     }
+//   }
 
-      {showLogin ? (
-        <Login onLoginStatus={setStatus} />
-      ) : (
-        <Register onRegisterStatus={setStatus} />
-      )}
-
-      {status === true && <p>Success!</p>}
-      {status === false && <p>Failed. Try again.</p>}
-    </div>
-  )
-}
+//   if (view === "dashboard") {
+//     return <Dashboard />
+//   }
+//   return (
+//     <div className="container">
+//       <Topmenu view={view} setView={setView} />
+//           {view === "home" && <Home />}
+//           {view === "login" && <Login onLoginStatus={handleLoginStatus} />}
+//           {view === "register" && <Register onRegisterStatus={setStatus} />}
+//       </div>
+//   )
+// }
